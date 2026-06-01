@@ -30,7 +30,7 @@ function Hero({
 				overflow-hidden
 				-z-2
 				w-full h-full"
-				duration={4.0}
+				duration={2.0}
 				initial={{
 					opacity: 0,
 					transform: "scale(105%)"

@@ -13,7 +13,7 @@ interface RevealProps {
 function Reveal({
 	children,
 	delay = 0,
-	duration = 1.0,
+	duration = 0.7,
 	className = "",
 	initial = { opacity: 0, y: 40, filter: "blur(10px)" },
 	whileInView = { opacity: 1, y: 0, filter: "blur(0px)" }
