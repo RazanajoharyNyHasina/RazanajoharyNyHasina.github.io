@@ -43,7 +43,10 @@ function MySelect({
 					sideOffset={8}
 				>
 					<Select.Viewport
-						className="rounded-xl p-1 bg-surface-primary shadow-xl"
+						className="rounded-xl p-1
+						outline-solid outline-1 outline-[color-mix(in_srgb,transparent_75%,var(--color-text))]
+						bg-[color-mix(in_srgb,var(--color-bg)_25%,transparent)]
+						backdrop-blur-sm"
 					>
 						{
 							data.map((value: MySelectEnum, id: number) => (

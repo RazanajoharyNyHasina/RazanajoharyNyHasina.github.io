@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 interface RevealProps {
 	children: ReactNode;
 	delay?: number;
+	duration?: number;
 	className?: string;
 	initial?: TargetAndTransition;
 	whileInView?: TargetAndTransition;
@@ -12,9 +13,10 @@ interface RevealProps {
 function Reveal({
 	children,
 	delay = 0,
+	duration = 1.0,
 	className = "",
-	initial = { opacity: 0, y: 40 },
-	whileInView = { opacity: 1, y: 0 }
+	initial = { opacity: 0, y: 40, filter: "blur(10px)" },
+	whileInView = { opacity: 1, y: 0, filter: "blur(0px)" }
 }: RevealProps) {
 
 	return (
@@ -27,7 +29,7 @@ function Reveal({
 				amount: 0.2
 			}}
 			transition={{
-				duration: 0.6,
+				duration: duration,
 				delay: delay,
 				ease: "easeOut"
 			}}
