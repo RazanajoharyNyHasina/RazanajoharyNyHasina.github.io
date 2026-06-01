@@ -123,7 +123,7 @@ function Hero({
 						/>
 						<CTASecondary
 							title={t("hero.cta.secondary")}
-							onClick={() => { }}
+							onClick={() => { document.getElementById("projects")?.scrollIntoView() }}
 							icon={IconStar}
 						/>
 					</Reveal>
