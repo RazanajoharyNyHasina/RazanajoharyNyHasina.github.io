@@ -8,18 +8,19 @@
 		}
 	},
 	"hero": {
-		"backgroundPicture": "Une image montrant Ny Hasina dans un vaste champ d’herbe verte avec un magnifique ciel bleu et quelques nuages.",
+		"backgroundPicture": "Une photo de Ny Hasina dans un vaste champ d'herbe verdoyante sous un magnifique ciel bleu parsemé de quelques nuages.",
 		"localization": "Basé à Antananarivo, Madagascar",
-		"paragraph": "Un esprit créatif qui construit chaque jour — concevant des systèmes performants, des expériences immersives et des univers numériques réfléchis à travers le code, le design et l’expérimentation.",
+		"header": "<bold>Un</bold> gars. <bold>Multiples</bold> compétences. <bold>Possibilités</bold> infinies.",
+		"paragraph": "Salut, je suis <strong>Ny Hasina</strong> — un créateur polyvalent passionné par la technologie, le design et la concrétisation d'idées.",
 		"cta": {
-			"primary": "M’embaucher",
-			"secondary": "Voir les projets"
+			"primary": "Contacter",
+			"secondary": "Projets"
 		},
 		"role": {
 			"gameDev": "Développeur de jeux vidéo",
 			"systemDev": "Développeur système",
 			"webDev": "Développeur web",
-			"UIUXDev": "Développeur UI / UX",
+			"UIUXDev": "Designer UI / UX",
 			"graphicsDesigner": "Designer graphique",
 			"3dArtist": "Artiste 3D"
 		}
@@ -77,7 +78,7 @@
 		"contact": {
 			"section": "Contact",
 			"availability": "Disponible pour :<emphase>Stages</emphase><emphase>Postes Junior</emphase>",
-			"CTA": "Prendre contact"
+			"CTA": "Contacter"
 		},
 		"tech": "Technologies",
 		"social": "Réseaux",

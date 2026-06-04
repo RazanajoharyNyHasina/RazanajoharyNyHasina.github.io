@@ -6,6 +6,7 @@ import IconArrowPointingTopRight from "../../assets/icons/ArrowPointingTopRight.
 import IconStar from "../../assets/icons/Star.svg?react";
 import TypingAnimated from "../../components/typing_animated";
 import Reveal from "../../components/reveal";
+import { Trans } from "react-i18next";
 
 function Hero({
 	t
@@ -78,37 +79,35 @@ function Hero({
 							/>
 						</Reveal>
 						<Reveal
-							delay={0.2}
-						>
-							<p
-								className="
-								text-4xl
-								md:text-5xl"
-							>
-								RAKOTOARIVONY
-							</p>
-						</Reveal>
-
-						<Reveal
-							delay={0.4}
-						>
-							<p
-								className="text-white
+							className="
+							font-high-priority
 							text-4xl
 							md:text-5xl"
-							>
-								Razanajohary <strong className="text-accent whitespace-nowrap font-normal">Ny Hasina</strong>.
-							</p>
+							delay={0.2}
+						>
+							<Trans
+								i18nKey="hero.header"
+								components={{
+									bold: <b className="font-bold text-accent"></b>
+								}}
+							/>
 						</Reveal>
 					</h1>
 					<Reveal
+						className="pointer-events-auto"
 						delay={0.6}
 					>
-						<p
-							className="pointer-events-auto"
+						{/* <p
 						>
 							{t("hero.paragraph")}
-						</p>
+						</p> */}
+
+						<Trans
+							i18nKey="hero.paragraph"
+							components={{
+								strong: <strong className="font-bold text-accent"></strong>
+							}}
+						/>
 					</Reveal>
 
 					<Reveal

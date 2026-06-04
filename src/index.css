@@ -9,7 +9,7 @@
 	/* --color-accent: #e6272e; */
 	--color-accent-secondary: #e62b2b;
 
-	--font-high-priority: "Saonara";
+	--font-high-priority: "Syne";
 
 	--animate-shiny: Shiny linear infinite 3s;
 }
@@ -47,6 +47,13 @@ body {
 	src: url("./assets/fonts/Montserrat/Montserrat-BoldItalic.ttf") format("truetype");
 	font-weight: bold;
 	font-style: italic;
+}
+
+@font-face {
+	font-family: "Syne";
+	src: url("./assets/fonts/Syne/Syne-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
