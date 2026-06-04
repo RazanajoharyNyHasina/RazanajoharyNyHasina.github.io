@@ -153,10 +153,31 @@ function NavBar({
 					data={dataLangage}
 				/>
 				<button
-					className="z-1"
+					className="z-1
+					relative
+					flex items-center justify-center
+					w-6 h-6"
 					onClick={() => setOpenNavMobile(openNavMobile ? false : true)}
 				>
-					<IconHamburgerMenu className="w-6 text-white" />
+					<IconHamburgerMenu
+						className="w-6 text-white transition-all duration-300
+						absolute"
+						style={{
+							opacity: openNavMobile ? "0%" : "100%",
+							transform: openNavMobile ? "rotateZ(90deg) scale(0%)" : "rotateZ(0deg) scale(100%)"
+						}}
+					/>
+					<p
+						className="text-white transition-all duration-300
+						text-2xl
+						absolute"
+						style={{
+							opacity: !openNavMobile ? "0%" : "100%",
+							transform: !openNavMobile ? "rotateZ(-90deg) scale(0%)" : "rotateZ(0deg) scale(100%)"
+						}}
+					>
+						X
+					</p>
 				</button>
 			</div>
 			<div
