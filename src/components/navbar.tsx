@@ -114,7 +114,7 @@ function NavBar({
 				z-1
 				w-full h-full"
 			>
-				<IconLogo className="w-6" />
+				<IconLogo className="w-8" />
 			</div>
 			<div
 				className="hidden md:flex items-center justify-end

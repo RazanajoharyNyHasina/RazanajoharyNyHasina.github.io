@@ -109,7 +109,7 @@ function Footer({ t }: SectionsProps) {
 				/>
 
 				<IconLogo
-					className="w-12 h-12 mb-16"
+					className="w-14 h-14 mb-16"
 				/>
 
 				<div

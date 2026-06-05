@@ -59,6 +59,7 @@ function Layout({ children }: LayoutProps) {
 				>
 					<IconLogo
 						className="animate-bounce
+						w-12
 						transition-opacity duration-300"
 						style={{
 							opacity: loaded ? "0%" : "100%"
