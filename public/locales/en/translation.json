@@ -4,6 +4,7 @@
 			"skills": "Skills",
 			"projects": "Projects",
 			"aboutMe": "About Me",
+			"AI": "AI",
 			"contact": "Contact"
 		}
 	},
@@ -72,6 +73,32 @@
 			"webserv": "A basic HTTP server built from scratch, covering sockets, HTTP, and server logic in C++.",
 			"ft_transcendence": "A full-stack project developing a real-time interactive real estate platform with an AI-powered search system, including end-to-end implementation of the user interface as well as backend and frontend functionality.",
 			"ft_linear_regression": "A small introduction to machine learning concepts through the implementation of a basic linear regression model and data visualization tools."
+		}
+	},
+	"ai": {
+		"section": {
+			"header": {
+				"title": "AI",
+				"subtitle": "Integration of AI into my workflow."
+			}
+		},
+		"bento": {
+			"debug": {
+				"title": "Debugging Assistant",
+				"subtitle": "Helps identify bugs, trace unexpected behavior, and surface issues that are not immediately visible in the code."
+			},
+			"teacher": {
+				"title": "Learning Companion",
+				"subtitle": "Clarifies concepts, reinforces understanding, and supports deeper exploration of technical topics."
+			},
+			"research_assistant": {
+				"title": "Research Assistant",
+				"subtitle": "Accelerates exploration of new technologies through comparisons, summaries, and structured insights."
+			},
+			"brainstorming": {
+				"title": "Brainstorming Partner",
+				"subtitle": "Supports idea generation, design exploration, and refinement of both creative and technical decisions."
+			}
 		}
 	},
 	"footer": {

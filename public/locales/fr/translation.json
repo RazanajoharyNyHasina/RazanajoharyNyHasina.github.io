@@ -4,6 +4,7 @@
 			"skills": "Compétences",
 			"projects": "Projets",
 			"aboutMe": "À propos",
+			"AI": "IA",
 			"contact": "Contact"
 		}
 	},
@@ -72,6 +73,32 @@
 			"webserv": "Un serveur HTTP basique développé depuis zéro, couvrant les sockets, HTTP et la logique serveur en C++.",
 			"ft_transcendence": "Un projet full-stack développant une plateforme immobilière interactive en temps réel avec un système de recherche alimenté par l’IA, incluant l’implémentation complète de l’interface utilisateur ainsi que des fonctionnalités backend et frontend.",
 			"ft_linear_regression": "Une introduction aux concepts du machine learning à travers l’implémentation d’un modèle simple de régression linéaire et d’outils de visualisation de données."
+		}
+	},
+	"ai": {
+		"section": {
+			"header": {
+				"title": "IA",
+				"subtitle": "Intégration de l’IA dans mon flux de travail."
+			}
+		},
+		"bento": {
+			"debug": {
+				"title": "Assistant de débogage",
+				"subtitle": "Aide à identifier les bugs, comprendre les comportements inattendus et détecter des problèmes qui ne sont pas immédiatement visibles dans le code."
+			},
+			"teacher": {
+				"title": "Compagnon d’apprentissage",
+				"subtitle": "Clarifie les concepts, renforce la compréhension et facilite l’exploration approfondie de sujets techniques."
+			},
+			"research_assistant": {
+				"title": "Assistant de recherche",
+				"subtitle": "Accélère l’exploration de nouvelles technologies grâce à des comparaisons, des synthèses et des analyses structurées."
+			},
+			"brainstorming": {
+				"title": "Partenaire de brainstorming",
+				"subtitle": "Soutient la génération d’idées, l’exploration de pistes de conception et l’affinage des décisions créatives et techniques."
+			}
 		}
 	},
 	"footer": {

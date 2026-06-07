@@ -135,13 +135,13 @@ function Skills({
 			title: t("skills.bento.photoEditing.title"),
 			subtitle: t("skills.bento.photoEditing.subtitle"),
 			icon: IconPhotoEditing,
-			tech: ["Adobe", "Gimp", "Krita", "RapidRaw"]
+			tech: ["Photoshop", "Gimp", "Krita", "RapidRaw"]
 		},
 		{
 			title: t("skills.bento.gameDev.title"),
 			subtitle: t("skills.bento.gameDev.subtitle"),
 			icon: IconGameDev,
-			tech: ["Godot", "GDExtension", "C-Sharp", "C", "C++"]
+			tech: ["Godot", "GDExtension", "GDScript", "C", "C++"]
 		},
 		{
 			title: t("skills.bento.3D.title"),

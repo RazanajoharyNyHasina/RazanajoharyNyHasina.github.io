@@ -97,11 +97,6 @@ function Hero({
 						className="pointer-events-auto"
 						delay={0.6}
 					>
-						{/* <p
-						>
-							{t("hero.paragraph")}
-						</p> */}
-
 						<Trans
 							i18nKey="hero.paragraph"
 							components={{

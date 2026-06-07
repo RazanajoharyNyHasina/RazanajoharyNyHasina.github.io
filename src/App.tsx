@@ -6,6 +6,7 @@ import type { TFunction } from 'i18next';
 import Skills from './pages/skills_section';
 import Portfolio from './pages/main/portfolio_section';
 import Footer from './components/footer';
+import AI from './pages/main/ai_section';
 
 export interface SectionsProps {
 	t: TFunction<"translation">;
@@ -19,6 +20,7 @@ function App() {
 			<Hero t={t} />
 			<Skills t={t} />
 			<Portfolio t={t} />
+			<AI t={t} />
 			<Footer t={t} />
 		</Layout>
 	)

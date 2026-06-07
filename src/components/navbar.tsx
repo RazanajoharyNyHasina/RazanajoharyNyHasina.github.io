@@ -39,7 +39,8 @@ function NavBar({
 	const navigationData: NavButtonProps[] = [
 		{ text: t("navBar.navButton.skills"), path: "#skills" },
 		{ text: t("navBar.navButton.projects"), path: "#projects" },
-		{ text: t("navBar.navButton.aboutMe"), path: "#aboutMe" },
+		{ text: t("navBar.navButton.AI"), path: "#AI" },
+		// { text: t("navBar.navButton.aboutMe"), path: "#aboutMe" },
 		{ text: t("navBar.navButton.contact"), path: "#contact" }
 	];
 	const [openNavMobile, setOpenNavMobile] = useState<boolean>(false);
