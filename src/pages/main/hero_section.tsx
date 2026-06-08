@@ -26,28 +26,32 @@ function Hero({
 			flex flex-col items-center justify-center
 			w-full h-screen"
 		>
-			<Reveal
+			<picture
 				className="absolute top-0 left-0
 				overflow-hidden
-				-z-2
-				w-full h-full"
-				duration={2.0}
-				initial={{
-					opacity: 0,
-					transform: "scale(105%)"
-				}}
-				whileInView={{
-					opacity: 1,
-					transform: "scale(100%)"
-				}}
+				w-full h-full
+				-z-2"
 			>
-				<img
-					src={BackgroundPicture}
-					alt="A picture showing Ny Hasina in the front of a breathtaking landscape. This image was generated with AI and edited by Ny Hasina."
-					className="w-full h-full object-cover select-none"
-					fetchPriority="high"
-				/>
-			</Reveal>
+				<Reveal
+					className="w-full h-full"
+					duration={2.0}
+					initial={{
+						opacity: 0,
+						transform: "scale(105%)"
+					}}
+					whileInView={{
+						opacity: 1,
+						transform: "scale(100%)"
+					}}
+				>
+					<img
+						src={BackgroundPicture}
+						alt="A picture showing Ny Hasina in the front of a breathtaking landscape. This image was generated with AI and edited by Ny Hasina."
+						className="w-full h-full object-cover select-none"
+						fetchPriority="high"
+					/>
+				</Reveal>
+			</picture>
 
 			<div
 				className="absolute bottom-0 left-0
