@@ -40,6 +40,7 @@ function FooterNavSection({
 			<h2
 				className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
 				font-bold text-xl
+				font-high-priority
 				bg-clip-text text-transparent"
 			>
 				{title}
@@ -137,6 +138,7 @@ function Footer({ t }: SectionsProps) {
 						<h2
 							className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
 							font-bold text-xl
+							font-high-priority
 							bg-clip-text text-transparent"
 						>
 							{t("footer.contact.section")}
@@ -150,7 +152,7 @@ function Footer({ t }: SectionsProps) {
 								className="flex"
 								i18nKey="footer.contact.availability"
 								components={{
-									emphase: <span className="font-saonara font-bold text-lg"></span>
+									emphase: <span className="font-high-priority font-bold text-lg"></span>
 								}}
 							/>
 
@@ -183,6 +185,7 @@ function Footer({ t }: SectionsProps) {
 				>
 					<p
 						className="flex items-center justify-center
+						font-high-priority
 						text-center
 						w-full"
 					>
@@ -190,6 +193,7 @@ function Footer({ t }: SectionsProps) {
 					</p>
 					<p
 						className="flex items-center justify-center
+						font-high-priority
 						text-center
 						mb-4
 						w-full"
