@@ -45,19 +45,23 @@ function PortfolioSchoolProject({
 			className="grid grid-cols-1 grid-rows-[auto_1fr] place-items-start
 			w-full h-full"
 		>
-			<h4
-				className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
+			<Reveal>
+				<h4
+					className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
 				font-bold
 				font-high-priority
 				bg-clip-text text-transparent"
-			>
-				{title}
-			</h4>
-			<p
-				className="text-sm"
-			>
-				{subtitle}
-			</p>
+				>
+					{title}
+				</h4>
+			</Reveal>
+			<Reveal>
+				<p
+					className="text-sm"
+				>
+					{subtitle}
+				</p>
+			</Reveal>
 		</li>
 	)
 }
@@ -109,15 +113,11 @@ function Portfolio({
 				{
 					schoolProjectsData.map((value: string, id: number) => {
 						return (
-							<Reveal
-								className="w-full h-full"
-								key={id}
-							>
-								<PortfolioSchoolProject
-									title={value}
-									subtitle={t(`portfolio.schoolProjects.${value}`)}
-								/>
-							</Reveal>
+							<PortfolioSchoolProject
+								key={value + id}
+								title={value}
+								subtitle={t(`portfolio.schoolProjects.${value}`)}
+							/>
 						)
 					})
 				}

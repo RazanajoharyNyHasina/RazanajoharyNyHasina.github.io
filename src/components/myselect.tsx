@@ -28,6 +28,7 @@ function MySelect({
 				py-2 px-4
 				text-sm
 				rounded-xl cursor-pointer"
+				aria-label="Change langage"
 			>
 				<Select.Value
 					defaultValue={value}

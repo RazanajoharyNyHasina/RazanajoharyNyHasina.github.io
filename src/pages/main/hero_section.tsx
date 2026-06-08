@@ -43,7 +43,7 @@ function Hero({
 			>
 				<img
 					src={BackgroundPicture}
-					alt={t("hero.backgroundPicture")}
+					alt="A picture showing Ny Hasina in the front of a breathtaking landscape. This image was generated with AI and edited by Ny Hasina."
 					className="w-full h-full object-cover select-none"
 					fetchPriority="high"
 				/>
