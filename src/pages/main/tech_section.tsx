@@ -17,6 +17,7 @@ import IconLinux from "../../assets/icons/simple-icons/linux.svg?react";
 import IconPython from "../../assets/icons/simple-icons/python.svg?react";
 import IconReact from "../../assets/icons/simple-icons/react.svg?react";
 import IconTypeScript from "../../assets/icons/simple-icons/typescript.svg?react";
+import Reveal from "../../components/reveal";
 
 function Tech({
 	t
@@ -52,17 +53,16 @@ function Tech({
 				header={t("techStack.header.title")}
 				content={t("techStack.header.subtitle")}
 			/>
-			<div
+			<Reveal
 				className="overflow-hidden w-full
 				mt-12
 				mask-[linear-gradient(to_right,transparent,white_25%,white_75%,transparent)]
-				mask-alpha
-				"
+				mask-alpha"
 			>
 				<InfiniteScroll
 					data={TechData}
 				/>
-			</div>
+			</Reveal>
 		</section>
 	)
 }

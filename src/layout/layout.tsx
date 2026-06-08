@@ -42,6 +42,7 @@ function Layout({ children }: LayoutProps) {
 			<img
 				className="w-0"
 				src={BackgroundPicture}
+				alt="A picture showing Ny Hasina in the front of a breathtaking landscape. This image was generated with AI and edited by Ny Hasina."
 				onLoad={() => {
 					setLoaded(true);
 					setTimeout(() => setDisplayLoading(false), 1000);

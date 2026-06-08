@@ -21,7 +21,7 @@ function Card({
 }: CardProps) {
 
 	return (
-		<li
+		<article
 			className="grid grid-cols-1 grid-rows-[auto_auto_1fr]
 			rounded-2xl
 			w-full h-full
@@ -61,7 +61,7 @@ function Card({
 			>
 				{subtitle}
 			</p>
-		</li>
+		</article>
 	)
 }
 
@@ -104,16 +104,19 @@ function AI({
 				{
 					IAUsage.map((value: AIUsageType, id: number) => {
 						return (
-							<Reveal
+							<li
 								key={value + id.toString()}
 								className="w-full h-full"
 							>
-								<Card
-									title={t(`ai.bento.${value.i18nkey}.title`)}
-									subtitle={t(`ai.bento.${value.i18nkey}.subtitle`)}
-									icon={value.icon}
-								/>
-							</Reveal>
+								<Reveal
+								>
+									<Card
+										title={t(`ai.bento.${value.i18nkey}.title`)}
+										subtitle={t(`ai.bento.${value.i18nkey}.subtitle`)}
+										icon={value.icon}
+									/>
+								</Reveal>
+							</li>
 						);
 					})
 				}
