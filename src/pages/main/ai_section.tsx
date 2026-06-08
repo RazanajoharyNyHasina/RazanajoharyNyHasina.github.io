@@ -51,6 +51,7 @@ function Card({
 				className="text-lg
 				bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
 				font-bold
+				font-high-priority
 				bg-clip-text text-transparent"
 			>
 				{title}

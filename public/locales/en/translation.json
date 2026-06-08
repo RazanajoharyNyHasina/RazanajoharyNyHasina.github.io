@@ -5,6 +5,7 @@
 			"projects": "Projects",
 			"aboutMe": "About Me",
 			"AI": "AI",
+			"techStack": "Tech Stack",
 			"contact": "Contact"
 		}
 	},
@@ -99,6 +100,12 @@
 				"title": "Brainstorming Partner",
 				"subtitle": "Supports idea generation, design exploration, and refinement of both creative and technical decisions."
 			}
+		}
+	},
+	"techStack": {
+		"header": {
+			"title": "Tech Stack",
+			"subtitle": "Tools and technologies I use in my work."
 		}
 	},
 	"footer": {

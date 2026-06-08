@@ -9,6 +9,8 @@ function SectionHeader({
 	header = "Header",
 	content = "Content"
 }: SectionHeaderProps) {
+
+
 	return (
 		<Reveal
 			className="flex flex-col items-center justify-center
@@ -22,6 +24,7 @@ function SectionHeader({
 				bg-clip-text
 				text-transparent
 				text-3xl md:text-4xl
+				font-high-priority
 				font-bold"
 			>
 				{header}

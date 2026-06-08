@@ -98,7 +98,7 @@ function Footer({ t }: SectionsProps) {
 				className="flex flex-col items-center justify-center
 				gap-8
 				p-4 lg:px-32
-				mt-2 md:mt-4 lg:mt-12
+				mt-2 md:mt-4 lg:mt-0
 				w-full relative"
 			>
 

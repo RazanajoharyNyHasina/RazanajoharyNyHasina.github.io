@@ -12,6 +12,7 @@
 	--font-high-priority: "Syne";
 
 	--animate-shiny: Shiny linear infinite 3s;
+	--animate-infinite-x-scroll: InfiniteXScroll linear infinite 42s;
 }
 
 body {
@@ -70,5 +71,14 @@ body {
 	}
 	to {
 		transform: translateX(1000px) rotateZ(45deg);
+	}
+}
+
+@keyframes InfiniteXScroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
 	}
 }

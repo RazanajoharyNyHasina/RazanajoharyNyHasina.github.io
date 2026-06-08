@@ -74,6 +74,7 @@ function SkillsCard({
 					bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_80%,var(--color-bg))]
 					bg-clip-text
 					text-transparent
+					font-high-priority
 					"
 				>
 					{title}
