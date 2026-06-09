@@ -109,6 +109,7 @@ function AI({
 								className="w-full h-full"
 							>
 								<Reveal
+									className="w-full h-full"
 								>
 									<Card
 										title={t(`ai.bento.${value.i18nkey}.title`)}
