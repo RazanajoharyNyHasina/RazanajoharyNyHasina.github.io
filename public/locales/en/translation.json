@@ -101,6 +101,33 @@
 			}
 		}
 	},
+	"about": {
+		"header": {
+			"title": "About me",
+			"subtitle": "Who I am?"
+		},
+		"me": "I'm a technology enthusiast and creator who enjoys bringing ideas to life through software, design, and digital art. Currently studying at <school>42 Antananarivo</school>, I have a strong interest in software development, game creation, and creative problem-solving. Beyond programming, I'm passionate about 3D art, visual design, and the artistic side of technology, always looking for ways to combine technical skills with creativity to build meaningful and engaging projects.",
+		"descriptionOfMyself": {
+			"title": "If I have to describe myself",
+			"curious": {
+				"title": "Curious",
+				"subtitle": "I love learning new things and exploring different sides of technology and creativity."
+			},
+			"creative": {
+				"title": "Creative",
+				"subtitle": "I enjoy turning ideas into experiences through code, design, photography, and 3D art."
+			},
+			"versatile": {
+				"title": "Versatile",
+				"subtitle": "I feel at home working on both technical and creative projects, often blending the two together."
+			},
+			"determined": {
+				"title": "Determined",
+				"subtitle": "I don't give up easily. Challenges motivate me to learn, improve, and keep pushing forward."
+			},
+			"1sentence": "Technical creator with an artistic mindset."
+		}
+	},
 	"techStack": {
 		"header": {
 			"title": "Tech Stack",

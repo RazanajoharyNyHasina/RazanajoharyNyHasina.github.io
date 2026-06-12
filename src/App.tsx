@@ -11,6 +11,7 @@ import Footer from './components/footer';
 
 
 import { lazy, Suspense } from 'react';
+import AboutMe from './pages/main/about_me_section';
 
 const Hero = lazy(() => import('./pages/main/hero_section'));
 const Portfolio = lazy(() => import('./pages/main/portfolio_section'));
@@ -33,6 +34,7 @@ function App() {
 				<Portfolio t={t} />
 				<AI t={t} />
 				<Tech t={t} />
+				<AboutMe t={t} />
 				<Footer t={t} />
 			</Suspense>
 		</Layout>

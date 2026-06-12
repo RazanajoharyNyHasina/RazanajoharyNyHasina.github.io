@@ -1,5 +1,6 @@
 import type { SectionsProps } from "../../App";
-import BackgroundPicture from "../../assets/BackgroundPicture.png";
+import BackgroundPictureDesktop from "../../assets/BackgroundPictureDesktop.png";
+import BackgroundPictureMobile from "../../assets/BackgroundPictureMobile.png";
 import CTAPrimary from "../../components/cta_primary";
 import CTASecondary from "../../components/cta_secondary";
 import IconArrowPointingTopRight from "../../assets/icons/ArrowPointingTopRight.svg?react";
@@ -26,32 +27,36 @@ function Hero({
 			flex flex-col items-center justify-center
 			w-full h-screen"
 		>
-			<picture
+			<Reveal
 				className="absolute top-0 left-0
 				overflow-hidden
 				w-full h-full
 				-z-2"
+				duration={2.0}
+				initial={{
+					opacity: 0,
+					transform: "scale(105%)"
+				}}
+				whileInView={{
+					opacity: 1,
+					transform: "scale(100%)"
+				}}
 			>
-				<Reveal
-					className="w-full h-full"
-					duration={2.0}
-					initial={{
-						opacity: 0,
-						transform: "scale(105%)"
-					}}
-					whileInView={{
-						opacity: 1,
-						transform: "scale(100%)"
-					}}
+				<picture
 				>
+
+					<source
+						media="(max-width: 768px)"
+						srcSet={BackgroundPictureMobile}
+					/>
 					<img
-						src={BackgroundPicture}
+						src={BackgroundPictureDesktop}
 						alt="A picture showing Ny Hasina in the front of a breathtaking landscape. This image was generated with AI and edited by Ny Hasina."
 						className="w-full h-full object-cover select-none"
 						fetchPriority="high"
 					/>
-				</Reveal>
-			</picture>
+				</picture>
+			</Reveal>
 
 			<div
 				className="absolute bottom-0 left-0

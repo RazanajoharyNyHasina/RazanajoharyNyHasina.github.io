@@ -4,7 +4,8 @@ import i18n from "../i18n/i18n";
 import NavBar from "../components/navbar";
 import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
-import BackgroundPicture from "../assets/BackgroundPicture.png";
+import BackgroundPictureDesktop from "../assets/BackgroundPictureDesktop.png";
+import BackgroundPictureMobile from "../assets/BackgroundPictureMobile.png";
 import IconLogo from "../assets/Logo.svg?react";
 
 interface LayoutProps {
@@ -39,16 +40,22 @@ function Layout({ children }: LayoutProps) {
 			ref={divRef}
 			onScroll={handleScroll}
 		>
-			<img
-				className="w-0"
-				src={BackgroundPicture}
-				alt="A picture showing Ny Hasina in the front of a breathtaking landscape. This image was generated with AI and edited by Ny Hasina."
-				onLoad={() => {
-					setLoaded(true);
-					setTimeout(() => setDisplayLoading(false), 1000);
-				}}
-				fetchPriority="high"
-			/>
+			<picture>
+				<source
+					media="(max-width: 768px)"
+					srcSet={BackgroundPictureMobile}
+				/>
+				<img
+					className="w-0"
+					src={BackgroundPictureDesktop}
+					alt="A picture showing Ny Hasina in the front of a breathtaking landscape. This image was generated with AI and edited by Ny Hasina."
+					onLoad={() => {
+						setLoaded(true);
+						setTimeout(() => setDisplayLoading(false), 1000);
+					}}
+					fetchPriority="high"
+				/>
+			</picture>
 			{loaded && children}
 
 			{

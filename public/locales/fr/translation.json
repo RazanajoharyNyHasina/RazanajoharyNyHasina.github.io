@@ -101,6 +101,33 @@
 			}
 		}
 	},
+	"about": {
+		"header": {
+			"title": "À propos",
+			"subtitle": "Qui je suis?"
+		},
+		"me": "Passionné par les technologies et la création numérique, j'aime transformer des idées en projets concrets en combinant développement, design et art digital. Actuellement étudiant à <school>42 Antananarivo</school>, je m'intéresse particulièrement au développement logiciel, à la création de jeux vidéo et à la résolution de problèmes complexes. Au-delà de la programmation, je cultive également une forte passion pour la 3D, le design visuel et l'aspect artistique des technologies, avec l'envie constante d'allier créativité et compétences techniques pour concevoir des expériences à la fois utiles et captivantes.",
+		"descriptionOfMyself": {
+			"title": "Si je devais me décrire",
+			"curious": {
+				"title": "Curieux",
+				"subtitle": "J’aime apprendre de nouvelles choses et explorer différentes facettes de la technologie et de la créativité."
+			},
+			"creative": {
+				"title": "Créatif",
+				"subtitle": "J’aime transformer des idées en expériences à travers le code, le design, la photographie et l’art 3D."
+			},
+			"versatile": {
+				"title": "Polyvalent",
+				"subtitle": "Je suis à l’aise aussi bien sur des projets techniques que créatifs, en combinant souvent les deux."
+			},
+			"determined": {
+				"title": "Déterminé",
+				"subtitle": "Je n’abandonne pas facilement. Les défis me motivent à apprendre, à progresser et à continuer d’avancer."
+			},
+			"1sentence": "Créateur technique à la sensibilité artistique."
+		}
+	},
 	"techStack": {
 		"header": {
 			"title": "Tech Stack",

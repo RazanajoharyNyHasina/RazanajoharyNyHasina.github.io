@@ -1,70 +1,7 @@
 import type { SectionsProps } from "../../App";
-import Reveal from "../../components/reveal";
+import ArticleContentCard from "../../components/article_content_card";
+import HeaderArticle from "../../components/header_article";
 import SectionHeader from "../../components/section_header";
-
-interface PortfolioSectionProps {
-	title: string;
-}
-
-function PortfolioSection({
-	title = "Title"
-}: PortfolioSectionProps) {
-	return (
-		<Reveal
-			className="w-full"
-		>
-			<header
-				className="w-full
-				flex items-center justify-start
-				px-4 md:px-8 lg:px-32 my-2"
-			>
-				<h3
-					className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
-					font-bold text-2xl
-					font-high-priority
-					bg-clip-text text-transparent"
-				>
-					{title}
-				</h3>
-			</header>
-		</Reveal>
-	)
-}
-
-interface PortfolioSchoolProjectProps {
-	title: string;
-	subtitle: string;
-}
-
-function PortfolioSchoolProject({
-	title = "Title",
-	subtitle = "Subtitle"
-}: PortfolioSchoolProjectProps) {
-	return (
-		<li
-			className="grid grid-cols-1 grid-rows-[auto_1fr] place-items-start
-			w-full h-full"
-		>
-			<Reveal>
-				<h4
-					className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
-				font-bold
-				font-high-priority
-				bg-clip-text text-transparent"
-				>
-					{title}
-				</h4>
-			</Reveal>
-			<Reveal>
-				<p
-					className="text-sm"
-				>
-					{subtitle}
-				</p>
-			</Reveal>
-		</li>
-	)
-}
 
 function Portfolio({
 	t
@@ -99,7 +36,7 @@ function Portfolio({
 			>
 			</div>
 
-			<PortfolioSection
+			<HeaderArticle
 				title={t("portfolio.schoolProjects.title")}
 			/>
 
@@ -113,7 +50,7 @@ function Portfolio({
 				{
 					schoolProjectsData.map((value: string, id: number) => {
 						return (
-							<PortfolioSchoolProject
+							<ArticleContentCard
 								key={value + id}
 								title={value}
 								subtitle={t(`portfolio.schoolProjects.${value}`)}
