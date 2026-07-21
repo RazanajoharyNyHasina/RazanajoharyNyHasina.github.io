@@ -47,7 +47,7 @@ function SkillsCard({
 					bg-white
 					opacity-25
 					blur-lg
-					-translate-y-25
+					-translate-y-50
 					w-10 h-[200%]"
 				>
 				</div>
@@ -142,6 +142,7 @@ function Skills({
 			title: t("skills.bento.gameDev.title"),
 			subtitle: t("skills.bento.gameDev.subtitle"),
 			icon: IconGameDev,
+			important: true,
 			tech: ["Godot", "GDExtension", "GDScript", "C", "C++"]
 		},
 		{

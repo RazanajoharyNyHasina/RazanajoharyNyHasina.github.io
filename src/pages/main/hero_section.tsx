@@ -14,6 +14,7 @@ function Hero({
 }: SectionsProps) {
 	const titleRole: string[] = [
 		t("hero.role.systemDev"),
+		t("hero.role.gameDev"),
 		t("hero.role.webDev"),
 		t("hero.role.UIUXDev"),
 		t("hero.role.graphicsDesigner"),
@@ -34,12 +35,10 @@ function Hero({
 				-z-2"
 				duration={2.0}
 				initial={{
-					opacity: 0,
-					transform: "scale(105%)"
+					opacity: 0
 				}}
 				whileInView={{
-					opacity: 1,
-					transform: "scale(100%)"
+					opacity: 1
 				}}
 			>
 				<picture
