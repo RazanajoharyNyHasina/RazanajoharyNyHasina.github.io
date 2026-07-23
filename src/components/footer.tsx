@@ -162,7 +162,7 @@ function Footer({ t }: SectionsProps) {
 
 							<CTAPrimary
 								title={t("footer.contact.CTA")}
-								onClick={() => window.location.href = "mailto:djazejhasi@gmail.com"}
+								onClick={() => window.location.href = "mailto:razanajoharynyhasina@gmail.com"}
 								icon={IconArrowPointingRight}
 							/>
 

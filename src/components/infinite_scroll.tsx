@@ -55,7 +55,7 @@ function InfiniteScroll({ data }: InfiniteScrollProps) {
 			ref={containerRef}
 			className="flex items-center justify-start
 			w-full gap-24 overflow-x-scroll
-			px-4 md:px-8 lg:px-32"
+			px-12 md:px-24 lg:px-32"
 			style={{
 				scrollbarWidth: "none"
 			}}

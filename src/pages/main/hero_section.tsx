@@ -23,7 +23,7 @@ function Hero({
 
 	return (
 		<section
-			className="overflow-y-scroll overflow-x-hidden
+			className="overflow-hidden
 			relative
 			flex flex-col items-center justify-center
 			w-full h-screen"
@@ -120,7 +120,7 @@ function Hero({
 
 						<CTAPrimary
 							title={t("hero.cta.primary")}
-							onClick={() => { window.location.href = "mailto:djazejhasi@gmail.com" }}
+							onClick={() => { window.location.href = "mailto:razanajoharynyhasina@gmail.com" }}
 							icon={IconArrowPointingTopRight}
 						/>
 						<CTASecondary
