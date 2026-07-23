@@ -2,7 +2,7 @@ import { motion, type TargetAndTransition } from "framer-motion";
 import type { ReactNode } from "react";
 
 interface RevealProps {
-	children: ReactNode;
+	children?: ReactNode;
 	delay?: number;
 	duration?: number;
 	className?: string;
