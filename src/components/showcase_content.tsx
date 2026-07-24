@@ -2,17 +2,21 @@ import { Trans } from "react-i18next";
 import HeaderArticle from "./header_article";
 import Reveal from "./reveal";
 
+type ComponentsMap = Record<string, React.ReactElement>;
+
 export interface ShowcaseContentProps {
 	title: string;
 	content_key_i18n: string;
 	video_link: string;
 	tech_used: string[];
+	components: ComponentsMap;
 }
 function ShowcaseContent({
 	title = "Title",
 	content_key_i18n = "Content",
 	video_link = "multi_mesh_painter_showcase.mp4",
-	tech_used = []
+	tech_used = [],
+	components = {}
 }: ShowcaseContentProps) {
 	return (
 		<li
@@ -21,7 +25,7 @@ function ShowcaseContent({
 		>
 			<Reveal
 				className="w-full
-				mdt:h-100 overflow-hidden"
+				md:h-100 overflow-hidden"
 			>
 				<video
 					autoPlay
@@ -29,7 +33,7 @@ function ShowcaseContent({
 					loop
 					playsInline
 					width={"100%"}
-					className="lg:-translate-y-35"
+					className="md:-translate-y-35"
 				>
 					<source
 						src={`/videos/${video_link}`}
@@ -48,17 +52,7 @@ function ShowcaseContent({
 			>
 				<Trans
 					i18nKey={content_key_i18n}
-					components={{
-						split: <Reveal className="w-full"></Reveal>,
-						link_multi_mesh_instance_3d: <a className="hover:underline font-bold" href="https://docs.godotengine.org/en/stable/classes/class_multimeshinstance3d.html" />,
-						link_to_multi_mesh: <a className="hover:underline font-bold" href="https://docs.godotengine.org/en/stable/classes/class_multimesh.html" />,
-						link_to_gdextension: <a className="hover:underline font-bold" href="https://docs.godotengine.org/en/4.4/tutorials/scripting/gdextension/index.html" />,
-						line_break: <><br /></>,
-						newline: <><br /></>,
-						sub: <sub></sub>,
-						bold: <b className="font-bold"></b>,
-						school: <a className="hover:underline font-bold" href="https://42antananarivo.mg" />
-					}}
+					components={components}
 				/>
 				<Reveal
 					className="w-full"
