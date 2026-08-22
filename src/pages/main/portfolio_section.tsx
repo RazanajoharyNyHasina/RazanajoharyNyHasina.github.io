@@ -15,6 +15,7 @@ function Portfolio({
 		"ft_printf",
 		"philosopher",
 		"minishell",
+		"miniRT",
 		"webserv",
 		"ft_transcendence",
 		"ft_linear_regression"
