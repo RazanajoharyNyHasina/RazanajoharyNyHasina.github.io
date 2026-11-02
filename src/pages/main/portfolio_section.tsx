@@ -18,7 +18,8 @@ function Portfolio({
 		"miniRT",
 		"webserv",
 		"ft_transcendence",
-		"ft_linear_regression"
+		"ft_linear_regression",
+		"in_the_shadow"
 	];
 
 	const personalProjectsData: ShowcaseContentProps[] = [

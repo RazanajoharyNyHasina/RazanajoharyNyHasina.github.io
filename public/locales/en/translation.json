@@ -76,14 +76,15 @@
 		},
 		"schoolProjects": {
 			"title": "School Projects",
-			"libft": "Recreates basic C library functions and utilities from scratch.",
-			"get_next_line": "Implements a function to read a file one line at a time, focusing on buffers and memory management in C.",
-			"ft_printf": "Recreates the C printf function, teaching variadic functions, formatting, and type handling.",
+			"libft": "Recreation of basic C library functions and utilities from scratch.",
+			"get_next_line": "Implementation of a function that read a file one line at a time, focusing on buffers and memory management in C.",
+			"ft_printf": "Recreation of the C printf function, teaching variadic functions, formatting, and type handling.",
 			"philosopher": "A multithreading simulation of the dining philosophers problem, focused on concurrency and synchronization.",
 			"minishell": "A simple Unix shell handling commands, pipes, redirections, and processes.",
 			"webserv": "A basic HTTP server built from scratch, covering sockets, HTTP, and server logic in C++.",
-			"ft_transcendence": "A full-stack project developing a real-time interactive real estate platform with an AI-powered search system, including end-to-end implementation of the user interface as well as backend and frontend functionality.",
+			"ft_transcendence": "A full-stack project developing a real-time interactive real estate platform with an AI-powered search system, including end-to-end implementation of the user interface and frontend functionality.",
 			"ft_linear_regression": "A small introduction to machine learning concepts through the implementation of a basic linear regression model and data visualization tools.",
+			"in_the_shadow": "Recreation of the emblematic games shadowmatic in Godot using GDScript.",
 			"miniRT": "A simple Raytracing renderer wrote from scratch."
 		}
 	},
